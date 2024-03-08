@@ -12,11 +12,11 @@ public class SomaMatriz extends Thread{
 		somaLinha();
 	}
 
-	private int somaLinha() {
+	private void somaLinha() {
 		int soma = 0;
 		for(int i = 0; i < 5; i++) {
 			soma += linha[i];
 		}
-		return soma;
+		System.out.println("A soma da linha " + (getId() - 14) + " é: " + " " + soma);
 	}
 }
